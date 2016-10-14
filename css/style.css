@@ -1,0 +1,176 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  background: url("../pictures/barbershop-index-50.png") no-repeat 50% 0px;
+}
+
+.clearfix::after {
+  content: "";
+
+  display: table;
+  clear: both;
+}
+
+.main-header {
+  margin-bottom: 57px;
+  color: #ffffff;
+  /*background-color: #000000;*/
+  /* Только на время сетки */
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+
+
+  /* Только на время сетки */
+  background-color: rgba(0, 125, 0, 0.4);
+}
+
+.main-navigation {
+  float: left;
+  width: 780px;
+
+
+  /* Только на время сетки */
+  min-height: 70px;
+  background-color: rgba(0, 210, 20, 0.4);
+}
+
+.main-navigation ul{
+  margin: 0;
+  padding: 0;
+
+  /* Только на время сетки */
+  background-color: rgba(0, 0, 200, 0.4);
+}
+
+.main-navigation li{
+  display: inline-block;
+
+
+  /* Только на время сетки */
+  background-color: rgba(0, 0, 200, 0.4);
+}
+
+.smal-logo {
+  float: left;
+
+  /* Только на время сетки */
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+.active {
+
+}
+
+.user-block {
+  float: right;
+  width: 140px;
+
+
+  /* Только на время сетки */
+  min-height: 70px;
+  background-color: rgba(0, 210, 20, 0.4);
+}
+
+.login {
+
+}
+
+.index-logo {
+  width: 368px;
+  height: 204px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+
+  /* Только на время сетки */
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+.features {
+  margin-bottom: 84px;
+
+  /* Только на время сетки */
+
+  background-color: rgba(0, 0, 230, 0.4);
+}
+
+.feature-item {
+  float: left;
+  width: 300px;
+  margin-right: 20px;
+
+  /* Только на время сетки */
+  min-height: 170px;
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+.feature-item:last-child {
+  margin-right: 0;
+}
+
+.index-content {
+  margin-bottom: 34px;
+  padding: 55px 80px;
+
+  /* Только на время сетки */
+  min-height: 320px;
+  background-color: rgba(0, 0, 230, 0.4);
+}
+
+.index-content-left {
+  float: left;
+  width: 380px;
+
+  /* Только на время сетки */
+
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+.index-content-right {
+  float: right;
+  width: 300px;
+
+  /* Только на время сетки */
+
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+.main-footer {
+  margin-top: 65px;
+  padding: 60px 0 40px;
+
+  /* Только на время сетки */
+  min-height: 90px;
+  background-color: rgba(120, 30, 20, 0.2);
+}
+
+.footer-contacts {
+  float: left;
+  width: 320px;
+  margin-right: 70px;
+
+  /* Только на время сетки */
+
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+.footer-social {
+  float: left;
+  width: 160px;
+  /* Только на время сетки */
+
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+.footer-copyright {
+  float: right;
+  width: 160px;
+  /* Только на время сетки */
+
+  background-color: rgba(255, 0, 0, 0.5);
+}
