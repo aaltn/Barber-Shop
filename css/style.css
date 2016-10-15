@@ -1,4 +1,10 @@
 body {
+
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
   margin: 0;
   padding: 0;
 
@@ -13,7 +19,7 @@ body {
 }
 
 .main-header {
-  margin-bottom: 57px;
+  margin-bottom: 60px;
   color: #ffffff;
   /*background-color: #000000;*/
   /* Только на время сетки */
@@ -29,7 +35,7 @@ body {
   /* Только на время сетки */
   background-color: rgba(0, 125, 0, 0.4);
 }
-
+/* ---- */
 .main-navigation {
   float: left;
   width: 780px;
@@ -44,16 +50,26 @@ body {
   margin: 0;
   padding: 0;
 
+  font-size: 0;
   /* Только на время сетки */
   background-color: rgba(0, 0, 200, 0.4);
 }
 
 .main-navigation li{
   display: inline-block;
+  vertical-align: top;
+
 
 
   /* Только на время сетки */
   background-color: rgba(0, 0, 200, 0.4);
+}
+
+.main-navigation a {
+
+  font-size: 14px;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .smal-logo {
@@ -66,7 +82,7 @@ body {
 .active {
 
 }
-
+/*--*/
 .user-block {
   float: right;
   width: 140px;
@@ -85,14 +101,14 @@ body {
   width: 368px;
   height: 204px;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 
   /* Только на время сетки */
   background-color: rgba(255, 0, 0, 0.5);
 }
-
+/*--*/
 .features {
-  margin-bottom: 84px;
+  margin-bottom: 80px;
 
   /* Только на время сетки */
 
@@ -114,8 +130,8 @@ body {
 }
 
 .index-content {
-  margin-bottom: 34px;
-  padding: 55px 80px;
+  margin-bottom: 35px;
+  padding: 50px 80px;
 
   /* Только на время сетки */
   min-height: 320px;
@@ -135,14 +151,15 @@ body {
   float: right;
   width: 300px;
 
-  /* Только на время сетки */
+  /* Только на время сетки --*/
 
   background-color: rgba(255, 0, 0, 0.5);
 }
 
 .main-footer {
   margin-top: 65px;
-  padding: 60px 0 40px;
+  padding-top: 60px;
+  padding-bottom: 40px;
 
   /* Только на время сетки */
   min-height: 90px;
@@ -152,7 +169,7 @@ body {
 .footer-contacts {
   float: left;
   width: 320px;
-  margin-right: 70px;
+  margin-right: 60px;
 
   /* Только на время сетки */
 
@@ -161,7 +178,7 @@ body {
 
 .footer-social {
   float: left;
-  width: 160px;
+  width: 180px;
   /* Только на время сетки */
 
   background-color: rgba(255, 0, 0, 0.5);
@@ -169,7 +186,7 @@ body {
 
 .footer-copyright {
   float: right;
-  width: 160px;
+  width: 180px;
   /* Только на время сетки */
 
   background-color: rgba(255, 0, 0, 0.5);
