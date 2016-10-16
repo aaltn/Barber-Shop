@@ -1,13 +1,18 @@
 body {
+  margin: 0;
+  min-width: 960px;
 
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 0;
-  padding: 0;
 
+  color: #ffffff;
+  /**/
+  /*background-image: url("../pictures/index-barbershop-bg.jpg");
+  background-color: #070707;
+  background-repeat: no-repeat;*/
   background: url("../pictures/barbershop-index-50.png") no-repeat 50% 0px;
 }
 
@@ -19,31 +24,24 @@ body {
 }
 
 .main-header {
-  margin-bottom: 60px;
+  margin-bottom: 56px;
+
+  font-size: 16px;
+  line-height: 20px;
+
   color: #ffffff;
-  /*background-color: #000000;*/
-  /* Только на время сетки */
-  background-color: rgba(255, 0, 0, 0.3);
+  background-color: #000000;
 }
 
 .container {
   width: 940px;
   margin: 0 auto;
   padding: 0 10px;
-
-
-  /* Только на время сетки */
-  background-color: rgba(0, 125, 0, 0.4);
 }
-/* ---- */
+
 .main-navigation {
   float: left;
   width: 780px;
-
-
-  /* Только на время сетки */
-  min-height: 70px;
-  background-color: rgba(0, 210, 20, 0.4);
 }
 
 .main-navigation ul{
@@ -51,109 +49,278 @@ body {
   padding: 0;
 
   font-size: 0;
-  /* Только на время сетки */
-  background-color: rgba(0, 0, 200, 0.4);
+  list-style: none;
 }
 
 .main-navigation li{
   display: inline-block;
   vertical-align: top;
-
-
-
-  /* Только на время сетки */
-  background-color: rgba(0, 0, 200, 0.4);
 }
 
+.login,
 .main-navigation a {
+  display: block;
+  padding: 26px 20px;
 
-  font-size: 14px;
+  font-size: 16px;
+  line-height: 20px;
   text-decoration: none;
+
   color: #ffffff;
+}
+
+.login:hover,
+.main-navigation a:hover {
+  background-color: #242424;
 }
 
 .smal-logo {
   float: left;
-
-  /* Только на время сетки */
-  background-color: rgba(255, 0, 0, 0.5);
+  width: 111px;
+  height: 24px;
+  padding: 24px 20px;
 }
 
 .active {
 
 }
-/*--*/
+
 .user-block {
+  position: relative;
+
   float: right;
-  width: 140px;
-
-
-  /* Только на время сетки */
-  min-height: 70px;
-  background-color: rgba(0, 210, 20, 0.4);
+  max-width: 140px;
 }
 
 .login {
+  /*display: block;
+  padding: 26px 20px;*/
+  padding-left: 53px;
+}
 
+.login::before {
+  content: "";
+
+  position: absolute;
+  top: 27px;
+  left: 23px;
+
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+
+  background: url("../img/spritesheet.png") -20px -144px no-repeat;
+
+  opacity: 0.3;
+}
+
+.login:hover::before {
+  opacity: 1;
 }
 
 .index-logo {
   width: 368px;
   height: 204px;
   margin: 0 auto;
-  margin-bottom: 25px;
-
-  /* Только на время сетки */
-  background-color: rgba(255, 0, 0, 0.5);
+  margin-bottom: 30px;
 }
-/*--*/
+
+.index-logo img {
+  width: 368px;
+  height: 204px;
+  margin: 0;
+  padding-left: 5px;
+}
+
 .features {
   margin-bottom: 80px;
 
-  /* Только на время сетки */
+  text-align: center;
+}
 
-  background-color: rgba(0, 0, 230, 0.4);
+.feature-name {
+  position: relative;
+
+  display: block;
+  margin: 0;
+  margin-bottom: 32px;
+  padding-bottom: 45px;
+
+  font-size: 30px;
+  /*line-height: 40px;*/
+}
+
+.feature-name::after {
+  content: "";
+
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+
+  width: 20px;
+  height: 20px;
+  margin-left: -10px;
+
+  background-color: #ffffff;
+  transform: rotate(45deg);
 }
 
 .feature-item {
   float: left;
   width: 300px;
   margin-right: 20px;
-
-  /* Только на время сетки */
-  min-height: 170px;
-  background-color: rgba(255, 0, 0, 0.5);
 }
 
 .feature-item:last-child {
   margin-right: 0;
 }
 
+.feature-item p {
+  margin: 0;
+  padding: 0px 10px;
+}
+
 .index-content {
   margin-bottom: 35px;
-  padding: 50px 80px;
+  padding: 50px 80px 52px;
 
-  /* Только на время сетки */
-  min-height: 320px;
-  background-color: rgba(0, 0, 230, 0.4);
+  color: #000000;
+  background: url("../img/vertical-line.png") no-repeat center,
+              #f8f5f2 url("../img/light-bg.png");
 }
 
 .index-content-left {
   float: left;
-  width: 380px;
-
-  /* Только на время сетки */
-
-  background-color: rgba(255, 0, 0, 0.5);
+  width: 380px;;
 }
 
 .index-content-right {
   float: right;
   width: 300px;
+}
 
-  /* Только на время сетки --*/
+.index-content h2 {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 30px;
+  line-height: 30px;
+}
 
-  background-color: rgba(255, 0, 0, 0.5);
+.index-content p {
+  margin: 0;
+  margin-bottom: 24px;
+  padding: 0;
+}
+
+.index-content-left p {
+  padding-right: 72px;
+}
+
+.news-preview {
+  margin-bottom: 30px;
+  padding: 0;
+  list-style: none;
+}
+
+.news-preview p {
+  margin: 0;
+}
+
+.news-preview time {
+  text-transform: none;
+  font-weight: 400;
+}
+
+.news-preview li {
+  margin-bottom: 25px;
+}
+
+.gallery {
+  position: relative;
+  width: 300px;
+  height: 267px;
+}
+
+.gallery-content {
+  margin: 0;
+  height: 164px;
+
+  background-color: #cccccc;
+  border: 7px solid #ffffff;
+}
+
+.gallery-content img {
+  width: 286px;
+  height: 164px;
+}
+
+
+
+.btn {
+  display: inline-block;
+  min-width: 140px;
+  margin-right: 18px;
+  padding: 9px 0 10px;
+
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  vertical-align: top;
+  text-decoration: none;
+  text-align: center;
+
+  color: #ffffff;
+  outline: none;
+  border: none;
+  background-color: #000000;
+}
+
+.btn:hover {
+  background-color: #663d15;
+}
+
+.gallery-prev,
+.gallery-next {
+  position: absolute;
+  bottom: 0;
+}
+
+.gallery-next {
+  margin-right: 0;
+  right: 0;
+}
+
+.appointment-form {
+  margin-top: 28px;
+}
+
+.appointment-form input {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 7px 15px 8px;
+  width: 104px;
+
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 2px solid #000000;
+}
+
+.appointment-form input:nth-child(2n) {
+  margin-right: 0;
+}
+
+.appointment-form input:focus {
+border: 2px solid  #663d15;
+}
+
+.appointment-form .btn {
+  width: 100%;
+  margin-top: 12px;
 }
 
 .main-footer {
@@ -161,33 +328,90 @@ body {
   padding-top: 60px;
   padding-bottom: 40px;
 
-  /* Только на время сетки */
-  min-height: 90px;
-  background-color: rgba(120, 30, 20, 0.2);
+  color: #ffffff;
+  background: #232323 url("../img/grey-bg.png");
+}
+
+.main-footer p {
+  margin: 0;
 }
 
 .footer-contacts {
   float: left;
   width: 320px;
   margin-right: 60px;
+}
 
-  /* Только на время сетки */
+.footer-contacts a {
+  text-decoration: none;
 
-  background-color: rgba(255, 0, 0, 0.5);
+  color: #ffffff;
+}
+
+.footer-contacts a:hover {
+  text-decoration: underline;
+
+  color: #663d15;
 }
 
 .footer-social {
   float: left;
   width: 180px;
-  /* Только на время сетки */
 
-  background-color: rgba(255, 0, 0, 0.5);
+  text-align: center;
 }
 
 .footer-copyright {
   float: right;
-  width: 180px;
-  /* Только на время сетки */
+  max-width: 180px;
 
-  background-color: rgba(255, 0, 0, 0.5);
+  text-align: center;
+}
+
+.footer-copyright .btn {
+  margin-top: 20px;
+  margin-right: 0;
+}
+
+.social-btn {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  margin-top: 20px;
+  margin-right: 3px;
+
+  font-size: 0;
+
+  background-color: #000000;
+  background-image: url("../img/spritesheet.png");
+}
+
+.social-btn:hover {
+  background-color: #ffffff;
+
+
+}
+
+.social-btn-vk {
+  background-position: -12px -310px;
+}
+
+.social-btn-fb {
+  background-position: -5px -11px;
+}
+
+.social-btn-inst {
+  background-position: -9px -191px;
+}
+
+.social-btn-vk:hover {
+  background-position: -12px -366px;
+}
+
+.social-btn-fb:hover {
+  background-position: -5px -73px;
+}
+
+.social-btn-inst:hover {
+  background-position: -9px -251px;
 }
