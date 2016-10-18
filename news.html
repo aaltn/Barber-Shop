@@ -4,18 +4,19 @@
     <meta charset="utf-8">
     <title>Барбершоп «Бородинский»</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
       <div class="container clearfix">
         <nav class="main-navigation">
-          <a class="smal-logo" href="index.html">
+          <a class="small-logo" href="index.html">
             <img src="img/small-logo.png" width="111" height="24" alt="«Бородинский»">
           </a>
           <ul>
             <li><a href="about.html">Информация</a></li>
-            <li><span class="active">Новости</span></li>
+            <li class="active"><span>Новости</span></li>
             <li><a href="price.html">Прайс-лист</a></li>
             <li><a href="catalog.html">Магазин</a></li>
             <li><a href="contacts.html">Контакты</a></li>
@@ -28,9 +29,36 @@
     </header>
 
     <main class="container">
-      <h1>Новости</h1>
 
+      <div class="inner-page-title">
+        <h1>Новости</h1>
+        <ul class="breadcrambs">
+          <li><a href="index.html">Главная</a></li>
+          <li class="curent"><span>Новости</span></li>
+        </ul>
+      </div>
 
+      <div class="big-heading">
+        <h2>Все новости</h2>
+      </div>
+
+      <div class="inner-news-content">
+
+        <ul class="news">
+          <li>
+            <img src="pictures/Jagermeister.jpg" alt="Свеженький «Jägermeister»" />
+            <p>Нам наконец завезли ягермфйстер! Теперь вы можете пропустить стаканчик во&nbsp;время стрижки</p>
+            <time datetime="2016-09-25">25 сентября</time>
+          </li>
+          <li>
+            <img src="pictures/Boris-Blade.jpg" alt="Борис «Бритва» Стригунец" />
+            <p>В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
+            <time datetime="2016-09-19">19 сентября</time>
+          </li>
+        </ul>
+        <a class="btn" href="#">Архив новостей</a>
+        
+      </div>
 
     </main>
 

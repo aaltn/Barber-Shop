@@ -16,8 +16,9 @@ body {
 }
 
 body.index-page {
+  margin: 0;
   color: #ffffff;
-  background: #070707 url("../pictures/index-barbershop-bg.jpg") no-repeat;
+  background: #070707 url("../pictures/index-barbershop-bg.jpg") no-repeat center top;
   /*background-image: url("../pictures/index-barbershop-bg.jpg");
   background-color: #070707;
   background-repeat: no-repeat;*/
@@ -81,14 +82,14 @@ body.index-page {
   background-color: #242424;
 }
 
-.main-navigation .smal-logo {
+.main-navigation .small-logo {
   float: left;
   width: 111px;
   height: 24px;
   /*padding: 24px 20px;*/
 }
 
-.main-navigation .smal-logo img {
+.main-navigation .small-logo img {
   width: 111px;
   height: 24px;
 }
@@ -97,8 +98,8 @@ body.index-page {
   position: relative;
 }
 
-.main-navigation .active a:hover {
-  background: none;
+.main-navigation .active:hover {
+  /*background-color: #000000;*/
 }
 
 .main-navigation .active::after {
@@ -119,13 +120,13 @@ body.index-page {
   font-size: 16px;
 }
 
-.main-navigation .smal-logo {
+.main-navigation .small-logo {
   /*display: block;*/
   padding: 24px 20px;
 }
 
-.main-navigation .smal-logo:hover,
-.main-navigation .active a:hover {
+.main-navigation .small-logo:hover,
+.main-navigation .active:hover {
   background: none;
 }
 
@@ -260,21 +261,25 @@ body.index-page {
   padding-right: 72px;
 }
 
+.news,
 .news-preview {
   margin-bottom: 30px;
   padding: 0;
   list-style: none;
 }
 
+.news p,
 .news-preview p {
   margin: 0;
 }
 
+.news time,
 .news-preview time {
   text-transform: none;
   font-weight: 400;
 }
 
+.news li,
 .news-preview li {
   margin-bottom: 25px;
 }
@@ -297,8 +302,6 @@ body.index-page {
   width: 286px;
   height: 164px;
 }
-
-
 
 .btn {
   display: inline-block;
@@ -486,4 +489,229 @@ border: 2px solid  #663d15;
 
 .social-btn-inst:hover {
   background-position: -9px -251px;
+}
+
+
+/*Стили для внутренних страниц*/
+/*---------------------------------*/
+/*price.html*/
+.inner-page-title {
+  margin-bottom: 55px;
+}
+
+.inner-page-title h1 {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+
+  font-size: 30px;
+  line-height: 42px;
+}
+.breadcrambs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.breadcrambs li {
+  position: relative;
+
+  display: inline;
+  padding-right: 25px;
+  margin-right: 15px;
+}
+
+.breadcrambs li::after {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -4px;
+
+  display: block;
+  width: 8px;
+  height: 8px;
+
+  background: #000000;
+  transform: rotate(45deg);
+}
+
+.breadcrambs a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.breadcrambs a:hover {
+  text-decoration: underline;
+  color: #663d15;
+}
+
+.breadcrambs .curent {
+  opacity: 0.4;
+}
+
+.breadcrambs .curent::after {
+    display: none;
+}
+
+.inner-content {
+  margin-bottom: 75px;
+}
+
+.big-heading {
+  margin-top: 55px;
+  margin-bottom: 65px;
+
+  text-align: center;
+  overflow: hidden;
+}
+
+.inner-content h2,
+.inner-content h3 {
+  margin: 0;
+  margin-top: 55px;
+  margin-bottom: 30px;
+
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.inner-content h1 + h2,
+.inner-content h2 + h3 {
+  margin-top: 15px;
+}
+
+.inner-content p {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.inner-content p.short-text {
+  padding-right: 75px;
+}
+
+.big-heading h2 {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0 25px;
+
+  font-size: 48px;
+  line-height: 48px;
+}
+
+.big-heading h2::before,
+.big-heading h2::after {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  width: 400%;
+  height: 2px;
+  background: #000000;
+}
+
+.big-heading h2::before {
+  left: 100%;
+}
+
+.big-heading h2::after {
+  right: 100%;
+}
+
+.collums {
+  margin-bottom: 55px;
+}
+
+.collum-left {
+  width: 460px;
+  float: left;
+}
+
+.collum-right {
+  width: 460px;
+  float: right;
+}
+
+.inner-content table {
+  border-collapse: collapse;
+}
+
+.inner-content td {
+  padding: 8px 15px;
+  border: 2px solid #000000;
+}
+
+.price-table {
+  width: 100%;
+}
+
+.price-table td {
+  width: 50%;
+}
+
+.price-table td:nth-child(n+2) {
+  text-align: center;
+}
+
+.uncompressed-list {
+  margin: 0;
+
+  padding: 0;
+
+
+  list-style: none;
+}
+
+.uncompressed-list li {
+  position: relative;
+
+  margin-bottom: 12px;
+  padding-left: 20px;
+}
+
+.uncompressed-list li::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -4px;
+
+  display: block;
+  width: 8px;
+  height: 8px;
+  background: #000000;
+
+  transform: rotate(45deg);
+}
+
+.collum-left *:first-child,
+.collum-right *:first-child {
+  margin-top: 0;
+}
+
+.collum-left *:last-child,
+.collum-right *:last-child {
+  margin-top: 0;
+}
+
+/*news page*/
+.inner-news-content {
+  margin: 0 auto;
+  width: 360px;
+  /*list-style: none;*/
+}
+
+/*.news li {
+  clear: left;
+}*/
+
+.news img {
+
+  /*margin-right: 50px;
+  margin-bottom: 25px;*/
+  background-color: #cccccc;
+  border: 7px solid #ffffff;
 }
