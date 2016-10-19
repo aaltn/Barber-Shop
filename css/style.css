@@ -658,21 +658,22 @@ border: 2px solid  #663d15;
 
 .uncompressed-list {
   margin: 0;
-
   padding: 0;
-
 
   list-style: none;
 }
 
 .uncompressed-list li {
+  margin-bottom: 12px;
+}
+
+.romb-marker li {
   position: relative;
 
-  margin-bottom: 12px;
   padding-left: 20px;
 }
 
-.uncompressed-list li::after {
+.romb-marker li::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -701,17 +702,28 @@ border: 2px solid  #663d15;
 .inner-news-content {
   margin: 0 auto;
   width: 360px;
-  /*list-style: none;*/
 }
 
-/*.news li {
-  clear: left;
-}*/
-
 .news img {
-
-  /*margin-right: 50px;
-  margin-bottom: 25px;*/
   background-color: #cccccc;
   border: 7px solid #ffffff;
+}
+
+/*shop.html*/
+form {
+  float: left;
+  width: 220px;
+}
+fieldset {
+  margin-bottom: 20px;
+  /*border: none;*/
+}
+
+.catalog {
+  float: right;
+  width: 700px;
+}
+
+.catalog-item {
+  display: inline-block;
 }
