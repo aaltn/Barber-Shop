@@ -38,43 +38,43 @@
         </ul>
       </div>
 
-      <form class="shop-form" action="https://echo.htmlacademy.ru" method="post">
+      <form class="shop-filtr" action="https://echo.htmlacademy.ru" method="post">
         <fieldset>
           <legend>Производители:</legend>
           <ul  class="uncompressed-list">
             <li>
               <label>
-                <input type="checkbox" name="" checked>
+                <input type="checkbox" name="baxter-of-california" checked>
                 Baxter of California
               </label>
             </li>
             <li>
               <label>
-                <input type="checkbox" name="">
+                <input type="checkbox" name="mr-natty">
                 Mr Natty
               </label>
             </li>
             <li>
               <label>
-              <input type="checkbox" name="" checked>
+              <input type="checkbox" name="suavecito" checked>
               Suavecito
               </label>
             </li>
             <li>
               <label>
-                <input type="checkbox" name="">
+                <input type="checkbox" name="malin-goetz">
                 Malin+Goetz
               </label>
             </li>
             <li>
               <label>
-                <input type="checkbox" name="">
+                <input type="checkbox" name="murray">
                 Murray's
               </label>
             </li>
             <li>
               <label>
-                <input type="checkbox" name="" checked>
+                <input type="checkbox" name="american-crew" checked>
                 American crew
               </label>
             </li>
@@ -85,99 +85,133 @@
           <ul  class="uncompressed-list">
             <li>
               <label>
-                <input type="radio" name="radio">
+                <input type="radio" name="radio" value="shaving-accessories">
                 Бритвенные принадлежности
               </label>
             </li>
             <li>
               <label>
-                <input type="radio" name="radio" checked>
+                <input type="radio" name="radio"  value="care-funds" checked>
                 Средства для ухода
               </label>
             </li>
             <li>
               <label>
-                <input type="radio" name="radio">
+                <input type="radio" name="radio" value="accessories">
                 Аксессуары
               </label>
             </li>
           </ul>
         </fieldset>
-        <a class="shop-filter btn" href="#">Показать</a>
-
+        <button class="btn" type="submit" name="filtr-button">Показать</button>
       </form>
 
       <div class="catalog">
+
         <article class="catalog-item">
-          <a href="">
-            <img src="pictures/shop-baxter-collect.jpg" alt="" />
+          <a class="catalog-item-link" href="catalog-item.html">
+            <img src="pictures/shop-baxter-collect.jpg" width="220" height="165" alt="Фото товара">
           </a>
-          <p>
-            Набор для путешествий <br>
-            «Baxter of California»
-          </p>
-          <span>2 900 руб.</span>
-          <a class="btn" href="">Купить</a>
+          <h2 class="catalog-header">
+            <a class="catalog-item-link" href="catalog-item.html">
+              <span class="catalog-item-product">Набор для путешествий</span>
+              <span class="catalog-item-manufacturer">«Baxter of California»</span>
+            </a>
+          </h2>
+          <div class="catalog-price">
+            <span class="price">2 900 руб.</span>
+            <a class="btn buy-btn" href="cart.html">Купить</a>
+          </div>
         </article>
+
         <article class="catalog-item">
-          <a href="">
-            <img src="pictures/shop-baxter-collect.jpg" alt="" />
+          <a class="catalog-item-link" href="catalog-item.html">
+            <img src="pictures/shop-baxter-conditioner.jpg" width="220" height="165" alt="Фото товара">
           </a>
-          <p>
-            Набор для путешествий <br>
-            «Baxter of California»
-          </p>
-          <span>2 900 руб.</span>
-          <a class="btn" href="">Купить</a>
+          <h2 class="catalog-header">
+            <a class="catalog-item-link" href="catalog-item.html">
+              <span class="catalog-item-product">Улажняющий кондиционер</span>
+              <span class="catalog-item-manufacturer">«Baxter of California»</span>
+            </a>
+          </h2>
+          <div class="catalog-price">
+            <span class="price">750 руб.</span>
+            <a class="btn buy-btn" href="cart.html">Купить</a>
+          </div>
         </article>
+
         <article class="catalog-item">
-          <a href="">
-            <img src="pictures/shop-baxter-collect.jpg" alt="" />
+          <a class="catalog-item-link" href="catalog-item.html">
+            <img src="pictures/shop-suavecito-gel.jpg" width="220" height="165" alt="Фото товара">
           </a>
-          <p>
-            Набор для путешествий <br>
-            «Baxter of California»
-          </p>
-          <span>2 900 руб.</span>
-          <a class="btn" href="">Купить</a>
+          <h2 class="catalog-header">
+            <a class="catalog-item-link" href="catalog-item.html">
+              <span class="catalog-item-product">Гель для волос</span>
+              <span class="catalog-item-manufacturer">«Suavecito»</span>
+            </a>
+          </h2>
+          <div class="catalog-price">
+            <span class="price">290 руб.</span>
+            <a class="btn buy-btn" href="cart.html">Купить</a>
+          </div>
         </article>
+
         <article class="catalog-item">
-          <a href="">
-            <img src="pictures/shop-baxter-collect.jpg" alt="" />
+          <a class="catalog-item-link" href="catalog-item.html">
+            <img src="pictures/shop-americancrew-cley.jpg" width="220" height="165" alt="Фото товара">
           </a>
-          <p>
-            Набор для путешествий <br>
-            «Baxter of California»
-          </p>
-          <span>2 900 руб.</span>
-          <a class="btn" href="">Купить</a>
+          <h2 class="catalog-header">
+            <a class="catalog-item-link" href="catalog-item.html">
+              <span class="catalog-item-product">Глина для укладки волос</span>
+              <span class="catalog-item-manufacturer">«American crew»</span>
+            </a>
+          </h2>
+          <div class="catalog-price">
+            <span class="price">500 руб.</span>
+            <a class="btn buy-btn" href="cart.html">Купить</a>
+          </div>
         </article>
+
         <article class="catalog-item">
-          <a href="">
-            <img src="pictures/shop-baxter-collect.jpg" alt="" />
+          <a class="catalog-item-link" href="catalog-item.html">
+            <img src="pictures/shop-american-gel.jpg" width="220" height="165" alt="Фото товара">
           </a>
-          <p>
-            Набор для путешествий <br>
-            «Baxter of California»
-          </p>
-          <span>2 900 руб.</span>
-          <a class="btn" href="">Купить</a>
+          <h2 class="catalog-header">
+            <a class="catalog-item-link" href="catalog-item.html">
+              <span class="catalog-item-product">Гель для волос</span>
+              <span class="catalog-item-manufacturer">«American crew»</span>
+            </a>
+          </h2>
+          <div class="catalog-price">
+            <span class="price">300 руб.</span>
+            <a class="btn buy-btn" href="cart.html">Купить</a>
+          </div>
         </article>
+
         <article class="catalog-item">
-          <a href="">
-            <img src="pictures/shop-baxter-collect.jpg" alt="" />
+          <a class="catalog-item-link" href="catalog-item.html">
+            <img src="pictures/shop-baxter-collect2.jpg" width="220" height="165" alt="Фото товара">
           </a>
-          <p>
-            Набор для путешествий <br>
-            «Baxter of California»
-          </p>
-          <span>2 900 руб.</span>
-          <a class="btn" href="">Купить</a>
+          <h2 class="catalog-header">
+            <a class="catalog-item-link" href="catalog-item.html">
+              <span class="catalog-item-product">Набор для бритья</span>
+              <span class="catalog-item-manufacturer">«Baxter of California»</span>
+            </a>
+          </h2>
+          <div class="catalog-price">
+            <span class="price">3 900 руб.</span>
+            <a class="btn buy-btn" href="cart.html">Купить</a>
+          </div>
         </article>
+
+        <ul class="paginator">
+          <li><a class="btn" href="#1">1</a></li>
+          <li><span class="curent btn">2</span></li>
+          <li><a class="btn" href="#1">3</a></li>
+          <li><a class="btn" href="#1">4</a></li>
+        </ul>
 
       </div>
-
-
 
     </main>
 
