@@ -346,11 +346,14 @@ body.index-page {
   right: 0;
 }
 
-.appointment-form {
+.appointment-form,
+.feedback-form {
   margin-top: 28px;
 }
 
-.appointment-form input {
+.appointment-form input,
+.feedback-form input,
+.feedback-form textarea {
   margin-right: 20px;
   margin-bottom: 20px;
   padding: 7px 15px 8px;
@@ -367,15 +370,31 @@ body.index-page {
   border: 2px solid #000000;
 }
 
+.feedback-form {
+  width: 294px;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  width: 260px;
+}
+
+/*.feedback-form textarea {
+  width: 260px;
+}*/
+
 .appointment-form input:nth-child(2n) {
   margin-right: 0;
 }
 
-.appointment-form input:focus {
+.appointment-form input:focus,
+.feedback-form input:focus,
+.feedback-form textarea:focus {
 border: 2px solid  #663d15;
 }
 
-.appointment-form .btn {
+.appointment-form .btn,
+.feedback-form  .btn {
   width: 100%;
   margin-top: 12px;
 }
@@ -387,6 +406,8 @@ border: 2px solid  #663d15;
 
   color: #ffffff;
   background: #232323 url("../img/grey-bg.png");
+  /*background: url("../img/grey-bg.png"), linear-gradient(#131313 1%,#232323 15%);*/
+    /*background: linear-gradient (rgba(0,0,0, 0), rgba(0,0,0, 100)), url("../img/grey-bg.png"), ;*/
 }
 
 .main-footer p {
@@ -623,6 +644,15 @@ border: 2px solid  #663d15;
   float: right;
 }
 
+.collum-center {
+  width: 760px;
+  margin: 0 auto;
+}
+
+/*.short-collum {
+  width: 308px;
+}*/
+
 .inner-content table {
   border-collapse: collapse;
 }
@@ -702,6 +732,7 @@ border: 2px solid  #663d15;
 .news img {
   background-color: #cccccc;
   border: 7px solid #ffffff;
+  box-shadow: 0 0 15px rgba(0, 1, 1, 0.2);
 }
 
 
@@ -906,3 +937,150 @@ margin-top: 25px;
 }
 
 /*ul*/
+
+/*about.html*/
+.collums img {
+  border: 7px solid #ffffff;
+  box-shadow: 0 0 15px rgba(0, 1, 1, 0.2);
+}
+
+.login-page {
+  width: 300px;
+
+  text-align: center;
+}
+
+/*Всплывающие формы*/
+/*-------------------*/
+
+/*кнопка закрыть*/
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: -34px;
+
+  width: 22px;
+  height: 22px;
+
+  font-size: 0;
+
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+
+  position: absolute;
+  top: 8px;
+  right: -2px;
+
+  display: block;
+  width: 26px;
+  height: 5px;
+
+  background-color: #d1d1d1;
+  border-radius: 1px;
+
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
+.modal-login {
+  position: absolute;
+  top: 120px;
+  left: 50%;
+
+  width: 300px;
+  margin-left: -230px;
+  padding: 50px 80px 60px;
+
+  color: #000000;
+  background: #f8f5f2 url("../img/light-bg.png");
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+/*.login-title {*/
+.modal-login h2,
+.login-page h2 {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.modal-login p,
+.login-page p {
+  margin: 0;
+  margin-bottom: 14px;
+}
+
+.modal-login input[type="text"],
+.modal-login input[type="password"],
+.login-page input[type="text"],
+.login-page input[type="password"] {
+  width: 236px;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  padding-right: 40px;
+
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #f9f6f3;
+  border: 2px solid #000000;
+  outline: none;
+}
+
+.modal-login input:focus,
+.login-page  input:focus {
+  border-color: #663d15;
+}
+
+.modal-login input.icon-user,
+.login-page  input.icon-user {
+  background-image: url("../img/spritesheet.png");
+  background-repeat: no-repeat;
+  background-position: 107% -478px;
+}
+
+.modal-login input.icon-password,
+.login-page input.icon-password {
+  background-image: url("../img/spritesheet.png");
+  background-repeat: no-repeat;
+  background-position: 107% -422px;
+}
+
+.modal-login .login-checkbox,
+.login-page .login-checkbox {
+  float: left;
+}
+
+.modal-login .restore,
+.login-page .restore {
+  float: right;
+
+  color: #000000;
+}
+
+
+.modal-login .btn,
+.login-page .btn {
+  width: 100%;
+  margin-top: 15px;
+}
