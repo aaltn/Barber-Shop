@@ -426,7 +426,9 @@ border: 2px solid  #663d15;
   color: #ffffff;
 }
 
-.footer-contacts a:hover {
+.footer-contacts a:hover,
+.modal-login .restore:hover,
+.login-page .restore:hover {
   text-decoration: underline;
 
   color: #663d15;
@@ -722,34 +724,34 @@ border: 2px solid  #663d15;
 }
 
 
-
 /*news page*/
 .inner-news-content {
   margin: 0 auto;
   width: 360px;
 }
 
-.news img {
+.news img,
+.collums img {
   background-color: #cccccc;
   border: 7px solid #ffffff;
   box-shadow: 0 0 15px rgba(0, 1, 1, 0.2);
 }
 
 
-
 /*shop.html*/
-.shop-filtr {
+.shop-filter {
   float: left;
   width: 220px;
 
   line-height: 18px;
 }
-.shop-filtr fieldset {
+
+.shop-filter fieldset {
   margin-bottom: 30px;
   border: none;
 }
 
-.shop-filtr legend {
+.shop-filter legend {
   font-size: 24px;
   padding-bottom: 30px;
 }
@@ -769,7 +771,7 @@ border: 2px solid  #663d15;
   margin-bottom: 20px;
 
   font-size: 14px;
-  /*line-height: 18px;*/
+  line-height: 18px;
   vertical-align: top;
 
   background-color: #ffffff;
@@ -858,10 +860,10 @@ border: 2px solid  #663d15;
   cursor: default;
 }
 
-.shop-filtr label:hover {
+/*.shop-filter label:hover {
   color: #663d15;
   cursor: pointer;
-}
+}*/
 
 
 
@@ -939,10 +941,10 @@ margin-top: 25px;
 /*ul*/
 
 /*about.html*/
-.collums img {
+/*.collums img {
   border: 7px solid #ffffff;
   box-shadow: 0 0 15px rgba(0, 1, 1, 0.2);
-}
+}*/
 
 .login-page {
   width: 300px;
@@ -984,7 +986,6 @@ margin-top: 25px;
 
   background-color: #d1d1d1;
   border-radius: 1px;
-
 }
 
 .modal-close::before {
@@ -995,16 +996,22 @@ margin-top: 25px;
   transform: rotate(-45deg);
 }
 
+/*всплывающая форма входа*/
 .modal-login {
-  position: absolute;
+  position: fixed;
   top: 120px;
   left: 50%;
+  z-index: 20;
 
+  display: block;
   width: 300px;
   margin-left: -230px;
   padding: 50px 80px 60px;
 
+
   color: #000000;
+  /*background-color: #f8f5f2;
+  background-image: url("../img/light-bg.png");*/
   background: #f8f5f2 url("../img/light-bg.png");
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 }
@@ -1066,21 +1073,149 @@ margin-top: 25px;
   background-position: 107% -422px;
 }
 
-.modal-login .login-checkbox,
-.login-page .login-checkbox {
+.modal-login .check-label,
+.login-page .check-label {
   float: left;
+
+  margin-top: 10px;
+  line-height: 18px;
 }
 
 .modal-login .restore,
 .login-page .restore {
   float: right;
 
+  margin-top: 10px;
+  line-height: 18px;
+
   color: #000000;
 }
-
 
 .modal-login .btn,
 .login-page .btn {
   width: 100%;
   margin-top: 15px;
+}
+
+
+/*всплывающая карта*/
+.modal-map {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 20;
+
+  display: block;
+  margin-top: -280px;
+  margin-left: -390px;
+
+  box-shadow: 0 30px  50px rgba(0, 1, 1, 0.7);
+}
+
+#yandex-map {
+  width: 766px;
+  height: 560px;
+
+  background: #e9e5dc url("../pictures/map.jpg");
+  border: 7px solid #ffffff;
+}
+
+/*оверлей*/
+.modal-overley {
+  position: fixed;;
+  left: 0;
+  top: 0;
+  z-index: 10;
+
+  display: none;
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/*нестандартная стилизация чекбоксов и радиобатанов*/
+.check-label {
+  position: relative;
+
+  display: block;
+  padding-left: 30px;
+
+  cursor: pointer;
+}
+
+.shop-filter .check-label {
+  padding-left: 40px;
+}
+
+.check-label:hover {
+  color: #663d15;
+}
+
+.check-label input {
+  display: none;
+}
+
+.check-indicator {
+  position: absolute;
+  top: -1px;
+  left: 0;
+
+  display: block;
+  width: 16px;
+  height: 16px;
+
+  border: 2px solid #000000;
+}
+
+input[type="radio"] + .check-indicator {
+  /*padding: 3px;*/
+
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked + .check-indicator::after {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: block;
+  width: 8px;
+  height: 8px;
+  margin-left: 4px;
+  margin-top: 4px;
+
+  background-color: #000000;
+  border-radius: 50%;
+}
+
+input[type="checkbox"]:checked + .check-indicator::before,
+input[type="checkbox"]:checked + .check-indicator::after {
+  content: "";
+
+  position: absolute;
+  top: 7px;
+  left: -1px;
+
+  display: block;
+  width: 18px;
+  height: 2px;
+
+  background-color: #000000;
+}
+
+input[type="checkbox"]:checked + .check-indicator::before {
+  transform: rotate(45deg);
+}
+
+input[type="checkbox"]:checked + .check-indicator::after {
+  transform: rotate(-45deg);
+}
+
+
+/*вкл\выкл видимость всплывающих окон*/
+.modal-hidden {
+  display: none;
 }

@@ -38,43 +38,49 @@
         </ul>
       </div>
 
-      <form class="shop-filtr" action="https://echo.htmlacademy.ru" method="post">
+      <form class="shop-filter" action="https://echo.htmlacademy.ru" method="get">
         <fieldset>
           <legend>Производители:</legend>
           <ul  class="uncompressed-list">
             <li>
-              <label>
+              <label class="check-label">
                 <input type="checkbox" name="baxter-of-california" checked>
+                <span class="check-indicator"></span>
                 Baxter of California
               </label>
             </li>
             <li>
-              <label>
+              <label class="check-label">
                 <input type="checkbox" name="mr-natty">
+                <span class="check-indicator"></span>
                 Mr Natty
               </label>
             </li>
             <li>
-              <label>
+              <label class="check-label">
               <input type="checkbox" name="suavecito" checked>
+              <span class="check-indicator"></span>
               Suavecito
               </label>
             </li>
             <li>
-              <label>
+              <label class="check-label">
                 <input type="checkbox" name="malin-goetz">
+                <span class="check-indicator"></span>
                 Malin+Goetz
               </label>
             </li>
             <li>
-              <label>
+              <label class="check-label">
                 <input type="checkbox" name="murray">
+                <span class="check-indicator"></span>
                 Murray's
               </label>
             </li>
             <li>
-              <label>
+              <label class="check-label">
                 <input type="checkbox" name="american-crew" checked>
+                <span class="check-indicator"></span>
                 American crew
               </label>
             </li>
@@ -84,26 +90,29 @@
           <legend>Группы товаров:</legend>
           <ul  class="uncompressed-list">
             <li>
-              <label>
+              <label class="check-label">
                 <input type="radio" name="radio" value="shaving-accessories">
+                <span class="check-indicator"></span>
                 Бритвенные принадлежности
               </label>
             </li>
             <li>
-              <label>
+              <label class="check-label">
                 <input type="radio" name="radio"  value="care-funds" checked>
+                <span class="check-indicator"></span>
                 Средства для ухода
               </label>
             </li>
             <li>
-              <label>
+              <label class="check-label">
                 <input type="radio" name="radio" value="accessories">
+                <span class="check-indicator"></span>
                 Аксессуары
               </label>
             </li>
           </ul>
         </fieldset>
-        <button class="btn" type="submit" name="filtr-button">Показать</button>
+        <button class="btn" type="submit">Показать</button>
       </form>
 
       <div class="catalog">
