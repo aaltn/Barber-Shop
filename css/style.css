@@ -91,10 +91,6 @@ body.index-page {
   position: relative;
 }
 
-.main-navigation .active:hover {
-  /*background-color: #000000;*/
-}
-
 .main-navigation .active::after {
   content: "";
   position: absolute;
@@ -379,10 +375,6 @@ body.index-page {
   width: 260px;
 }
 
-/*.feedback-form textarea {
-  width: 260px;
-}*/
-
 .appointment-form input:nth-child(2n) {
   margin-right: 0;
 }
@@ -406,8 +398,10 @@ border: 2px solid  #663d15;
 
   color: #ffffff;
   background: #232323 url("../img/grey-bg.png");
-  /*background: url("../img/grey-bg.png"), linear-gradient(#131313 1%,#232323 15%);*/
-    /*background: linear-gradient (rgba(0,0,0, 0), rgba(0,0,0, 100)), url("../img/grey-bg.png"), ;*/
+  /*в хроме не работает одновреммено
+  и градиент и картинка в бекграунде
+  background: url("../img/grey-bg.png"), linear-gradient(#131313 1%,#232323 15%);*/
+  /*background: linear-gradient (rgba(0,0,0, 0), rgba(0,0,0, 100)), url("../img/grey-bg.png"), ;*/
 }
 
 .main-footer p {
@@ -502,7 +496,6 @@ border: 2px solid  #663d15;
   background-position: -9px -251px;
 }
 
-
 /*Стили для внутренних страниц     */
 /*---------------------------------*/
 /*price.html*/
@@ -518,6 +511,7 @@ border: 2px solid  #663d15;
   font-size: 30px;
   line-height: 42px;
 }
+
 .breadcrambs {
   margin: 0;
   padding: 0;
@@ -651,10 +645,6 @@ border: 2px solid  #663d15;
   margin: 0 auto;
 }
 
-/*.short-collum {
-  width: 308px;
-}*/
-
 .inner-content table {
   border-collapse: collapse;
 }
@@ -723,7 +713,6 @@ border: 2px solid  #663d15;
   margin-top: 0;
 }
 
-
 /*news page*/
 .inner-news-content {
   margin: 0 auto;
@@ -736,7 +725,6 @@ border: 2px solid  #663d15;
   border: 7px solid #ffffff;
   box-shadow: 0 0 15px rgba(0, 1, 1, 0.2);
 }
-
 
 /*shop.html*/
 .shop-filter {
@@ -771,7 +759,7 @@ border: 2px solid  #663d15;
   margin-bottom: 20px;
 
   font-size: 14px;
-  line-height: 18px;
+  /*line-height: 18px;*/
   vertical-align: top;
 
   background-color: #ffffff;
@@ -798,7 +786,6 @@ border: 2px solid  #663d15;
 .catalog-item .catalog-item-product {
   text-transform: none;
 }
-
 
 .catalog-item .catalog-item-product,
 .catalog-item .catalog-item-manufacturer {
@@ -838,7 +825,6 @@ border: 2px solid  #663d15;
 .paginator {
   margin-top:  20px;
   padding: 0;
-  /*font-size: 0;*/
 }
 
 .paginator li {
@@ -860,13 +846,6 @@ border: 2px solid  #663d15;
   cursor: default;
 }
 
-/*.shop-filter label:hover {
-  color: #663d15;
-  cursor: pointer;
-}*/
-
-
-
 /*catalog-item.html*/
 .item-gallery {
   float: left;
@@ -881,7 +860,6 @@ border: 2px solid  #663d15;
   height: 500px;
   margin: 0;
   margin-bottom: 20px;
-  /*padding: 0;*/
   box-shadow: 0 0 15px rgba(0, 1, 1, 0.2);
 }
 
@@ -914,10 +892,6 @@ border: 2px solid  #663d15;
   padding-top: 20px;
 }
 
-/*.item-available {
-  margin-bottom: 20px;
-}*/
-
 .item-article {
   float: right;
   color: #aeaeae;
@@ -937,14 +911,6 @@ margin-top: 25px;
   width: 188px;
   padding-left: 0;
 }
-
-/*ul*/
-
-/*about.html*/
-/*.collums img {
-  border: 7px solid #ffffff;
-  box-shadow: 0 0 15px rgba(0, 1, 1, 0.2);
-}*/
 
 .login-page {
   width: 300px;
@@ -1003,20 +969,21 @@ margin-top: 25px;
   left: 50%;
   z-index: 20;
 
-  display: block;
+  display: none;
   width: 300px;
   margin-left: -230px;
   padding: 50px 80px 60px;
 
 
   color: #000000;
-  /*background-color: #f8f5f2;
+  /*в хроме не работает тень
+  когда используются оба свойства
+  background-color: #f8f5f2;
   background-image: url("../img/light-bg.png");*/
   background: #f8f5f2 url("../img/light-bg.png");
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 }
 
-/*.login-title {*/
 .modal-login h2,
 .login-page h2 {
   margin: 0;
@@ -1097,7 +1064,6 @@ margin-top: 25px;
   margin-top: 15px;
 }
 
-
 /*всплывающая карта*/
 .modal-map {
   position: fixed;
@@ -1105,7 +1071,7 @@ margin-top: 25px;
   left: 50%;
   z-index: 20;
 
-  display: block;
+  display: none;
   margin-top: -280px;
   margin-left: -390px;
 
@@ -1169,8 +1135,6 @@ margin-top: 25px;
 }
 
 input[type="radio"] + .check-indicator {
-  /*padding: 3px;*/
-
   border-radius: 50%;
 }
 
@@ -1215,7 +1179,104 @@ input[type="checkbox"]:checked + .check-indicator::after {
 }
 
 
-/*вкл\выкл видимость всплывающих окон*/
-.modal-hidden {
-  display: none;
+/*  вкл. видимость всплывающих окон  */
+.overley-show {
+  display: block;
+}
+
+.modal-show {
+  display: block;
+  -webkit-animation: bounce 0.6s;
+	animation: bounce 0.6s;
+}
+
+.modal-error {
+	-webkit-animation: shake 0.6s;
+	animation: shake 0.6s;
+}
+
+/*-- анимация всплывающих окон --*/
+
+@-webkit-keyframes bounce {
+	0% {
+		-webkit-transform: translateY(-2000px);
+		transform: translateY(-2000px);
+	}
+	70% {
+		-webkit-transform: translateY(30px);
+		transform: translateY(30px);
+	}
+	90% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+	100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+}
+
+@keyframes bounce {
+	0% {
+		-webkit-transform: translateY(-2000px);
+		transform: translateY(-2000px);
+	}
+	70% {
+		-webkit-transform: translateY(30px);
+		transform: translateY(30px);
+	}
+	90% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+	100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+}
+
+@-webkit-keyframes shake {
+	0%,
+	100% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+	10%,
+	30%,
+	50%,
+	70%,
+	90% {
+		-webkit-transform: translateX(-10px);
+		transform: translateX(-10px);
+	}
+	20%,
+	40%,
+	60%,
+	80% {
+		-webkit-transform: translateX(10px);
+		transform: translateX(10px);
+	}
+}
+
+@keyframes shake {
+	0%,
+	100% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+	10%,
+	30%,
+	50%,
+	70%,
+	90% {
+		-webkit-transform: translateX(-10px);
+		transform: translateX(-10px);
+	}
+	20%,
+	40%,
+	60%,
+	80% {
+		-webkit-transform: translateX(10px);
+		transform: translateX(10px);
+	}
 }

@@ -60,8 +60,6 @@
         </div>
       </div>
 
-
-
     </main>
 
     <footer class="main-footer">
@@ -86,5 +84,26 @@
       </div>
     </footer>
 
+    <!-- modal content -->
+    <div class="modal-overley"></div>
+
+    <div class="modal-login">
+      <button class="modal-close" type="button" title="Закрыть">Закрыть</button>
+      <h2 class="login-title">Личный кабинет</h2>
+      <p>Введите пожайлуста свой логин и пароль</p>
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+        <input class="icon-user" type="text" name="login" placeholder="Логин">
+        <input class="icon-password" type="password" name="password" placeholder="Пароль">
+        <label class="check-label">
+          <input type="checkbox" name="remember">
+          <span class="check-indicator"></span>
+          Запомните меня
+        </label>
+        <a class="restore" href="#">Я забыл пароль!</a>
+        <button class="btn" type="submit">Войти</button>
+      </form>
+    </div>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
